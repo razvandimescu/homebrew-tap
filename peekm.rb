@@ -11,7 +11,7 @@ class Peekm < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/razvandimescu/peekm/releases/download/v0.1.0/peekm_0.1.0_darwin_amd64.tar.gz"
-      sha256 "dc010ad861a88214d90b357a2df5a81cf87c772977bc6169bb243443a375b21c"
+      sha256 "eb85f465aeb1a591ee1a27dc672a668296f42c52110821af47a14e91a6410a6a"
 
       def install
         bin.install "peekm"
@@ -19,7 +19,7 @@ class Peekm < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/razvandimescu/peekm/releases/download/v0.1.0/peekm_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ee282a5f3aa92d6fe35528273137464a5597561df1340b7b724a8872766d27c6"
+      sha256 "99000379d3357cd0ecc64ccc75821efadd4488e2887be6cc85e0f12043b5d6bc"
 
       def install
         bin.install "peekm"
@@ -30,14 +30,14 @@ class Peekm < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/razvandimescu/peekm/releases/download/v0.1.0/peekm_0.1.0_linux_amd64.tar.gz"
-      sha256 "dc6de5a580336680ddd50eb6c5748ee11fa25f504112fe0d97467a66eecf8657"
+      sha256 "ecef472a033c01c2dccd7e139d33da76ff98a153245ead331df24f95a0f815c8"
       def install
         bin.install "peekm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/razvandimescu/peekm/releases/download/v0.1.0/peekm_0.1.0_linux_arm64.tar.gz"
-      sha256 "03e13d82a1c4e2dc1e700678c1385590386affa15c883f4a626683c2c024ff6a"
+      sha256 "85c70ab16e0be4f85330152cc50dd81ba3f92c801ea5353cb580e8dddad6b496"
       def install
         bin.install "peekm"
       end
