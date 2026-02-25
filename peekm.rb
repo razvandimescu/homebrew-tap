@@ -5,21 +5,21 @@
 class Peekm < Formula
   desc "Zen-like markdown viewer with live reload"
   homepage "https://github.com/razvandimescu/peekm"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.6/peekm_0.1.6_darwin_amd64.tar.gz"
-      sha256 "957618a9b8bb6878f333b57df24799101d966b5b28aed40774431dfef8950d89"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.7/peekm_0.1.7_darwin_amd64.tar.gz"
+      sha256 "7a5a1493d30ae07da74a5c4c628b4685be7843879995056ae2c9a70cc2a7c3bd"
 
       define_method(:install) do
         bin.install "peekm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.6/peekm_0.1.6_darwin_arm64.tar.gz"
-      sha256 "ac97b62acb639ea845322c525e7bc5f7b217ef5cc2a23ad20920ff0687d193d1"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.7/peekm_0.1.7_darwin_arm64.tar.gz"
+      sha256 "e5596ddbbb0018feb3ba56b14349472dd6081170089de83526752134850651cf"
 
       define_method(:install) do
         bin.install "peekm"
@@ -29,15 +29,15 @@ class Peekm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.6/peekm_0.1.6_linux_amd64.tar.gz"
-      sha256 "637064dbb5248f26896d6914e995185826fa731ccf5ea234c760b72da99e1594"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.7/peekm_0.1.7_linux_amd64.tar.gz"
+      sha256 "ca2b4bc542039f4037c1ed1f85cda378d937cc1ebcfb9c3b750e5b3a708eaddd"
       define_method(:install) do
         bin.install "peekm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.6/peekm_0.1.6_linux_arm64.tar.gz"
-      sha256 "17e75997235c51d2830ded5c73a5f44dd1800a15cc283ab213324d32043b1fec"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.7/peekm_0.1.7_linux_arm64.tar.gz"
+      sha256 "26554f833476a55ca8e737ee27ea6861135684be614222d890742a2b476ebff4"
       define_method(:install) do
         bin.install "peekm"
       end
