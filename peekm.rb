@@ -5,21 +5,21 @@
 class Peekm < Formula
   desc "Track every AI coding session across all your projects in real time"
   homepage "https://github.com/razvandimescu/peekm"
-  version "0.1.22"
+  version "0.1.23"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.22/peekm_0.1.22_darwin_amd64.tar.gz"
-      sha256 "e60d50d77df44a3a2d2a81b925c9237469492c492daee81863aa0f4153431683"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.23/peekm_0.1.23_darwin_amd64.tar.gz"
+      sha256 "b9842659c7ab70650319348cb4a77a40809e1692bc5c3f6165347b0a23d3868c"
 
       define_method(:install) do
         bin.install "peekm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.22/peekm_0.1.22_darwin_arm64.tar.gz"
-      sha256 "2d35724bab82d49a427c7ad901974822c9a30e9bfd22b867790884fefd0d5991"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.23/peekm_0.1.23_darwin_arm64.tar.gz"
+      sha256 "f1bc660cfadbda5ac5acb4c2da28ad47609bd82925eea8c75a08b035d7ddd90c"
 
       define_method(:install) do
         bin.install "peekm"
@@ -29,15 +29,15 @@ class Peekm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.22/peekm_0.1.22_linux_amd64.tar.gz"
-      sha256 "57171937d7c1de1b5b989948a1acb1c60ca9c45186fa1dd7c4f1ffe27e4822d9"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.23/peekm_0.1.23_linux_amd64.tar.gz"
+      sha256 "ed74c3a4dfc148ea6dbe67955256e897cf02d62826b7285e309c90df3382aefa"
       define_method(:install) do
         bin.install "peekm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.22/peekm_0.1.22_linux_arm64.tar.gz"
-      sha256 "db91413453796147a210e90b61df43d21fb3bafc9de7f01196b7caa0403ebc9b"
+      url "https://github.com/razvandimescu/peekm/releases/download/v0.1.23/peekm_0.1.23_linux_arm64.tar.gz"
+      sha256 "d494b7cfc0b38a60ddf4b066040a04c8e606debc96694d04bcd2552deba771a0"
       define_method(:install) do
         bin.install "peekm"
       end
