@@ -2,25 +2,25 @@ class Numa < Formula
   desc "Portable DNS resolver with ad blocking, .numa local service proxy, and developer overrides"
   homepage "https://github.com/razvandimescu/numa"
   license "MIT"
-  version "0.21.0"
+  version "0.22.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/razvandimescu/numa/releases/download/v0.21.0/numa-macos-aarch64.tar.gz"
-      sha256 "70372c62feefed108a3523ac07c42af35637e0d8a586318c90d868473ddd8ba4"
+      url "https://github.com/razvandimescu/numa/releases/download/v0.22.0/numa-macos-aarch64.tar.gz"
+      sha256 "eddf3fbef5130c5fb1a8b5cccd59905ff4a10185b8d6e614904e53905d28e3e2"
     else
-      url "https://github.com/razvandimescu/numa/releases/download/v0.21.0/numa-macos-x86_64.tar.gz"
-      sha256 "20209ebb888b8f1aad0f4405849cf648d467fe842d484ba29ca2ac97769a51ac"
+      url "https://github.com/razvandimescu/numa/releases/download/v0.22.0/numa-macos-x86_64.tar.gz"
+      sha256 "c68a60c204553c2fa5bd1024a2b7bec184632a4374c28a837ee09b8a7ce37838"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/razvandimescu/numa/releases/download/v0.21.0/numa-linux-aarch64.tar.gz"
-      sha256 "639ce90bcea723c086448e02e8ea0787ba1ba2abe52b2359c55cb758dfaf70da"
+      url "https://github.com/razvandimescu/numa/releases/download/v0.22.0/numa-linux-aarch64.tar.gz"
+      sha256 "eb50659c4321654433b13c05f59ff71d01c69f7cfbda72c1074961eb9809faba"
     else
-      url "https://github.com/razvandimescu/numa/releases/download/v0.21.0/numa-linux-x86_64.tar.gz"
-      sha256 "2db954f1aaa26df92bd4fa0d2631c48bb5242b3bf9741af3ec265b204041e12b"
+      url "https://github.com/razvandimescu/numa/releases/download/v0.22.0/numa-linux-x86_64.tar.gz"
+      sha256 "0560125da08ce7b5daa08c9df79025034017556b002d5331cb15274aa7f3ec3c"
     end
   end
 
